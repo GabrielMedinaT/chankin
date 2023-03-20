@@ -8,7 +8,7 @@ const FormularioContacto = () => {
       <br />
       <form className="formulario">
         <label htmlFor="motivo" className="form-label">
-          Seleccione el motivo de su mensaje
+          Motivo de su mensaje
         </label>
         <select class="form-select" aria-label="Default select example">
           <option value="opcion1">Información sobre actividades</option>
