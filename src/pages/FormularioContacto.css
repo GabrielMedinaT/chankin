@@ -16,9 +16,15 @@ $maize: rgba(246, 237, 103, 1); */
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 0px;
   width: 100vw;
   height: 100vh;
+  background-image: url("../images/fondoNav.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
 .formulario {
@@ -29,18 +35,6 @@ $maize: rgba(246, 237, 103, 1); */
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(123, 168, 69);
-  background: radial-gradient(
-    circle,
-    rgba(123, 168, 69, 1) 0%,
-    rgba(123, 168, 69, 1) 14%,
-    rgba(123, 168, 69, 1) 25%,
-    rgba(123, 168, 69, 1) 39%,
-    rgba(123, 168, 69, 1) 51%,
-    rgba(123, 168, 69, 0.15) 71%,
-    rgba(123, 168, 69, 0) 83%,
-    rgba(123, 168, 69, 0) 100%
-  );
 }
 input[type="text"] {
   width: 50%;
@@ -117,4 +111,12 @@ select {
 select:focus {
   outline: none;
   background-color: rgba(246, 237, 103, 1);
+}
+.componente h1 {
+  color: rgba(100, 82, 123, 1);
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background-color: rgba(246, 237, 103, 0.4);
+  border-radius: 10px;
 }

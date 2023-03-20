@@ -17,6 +17,7 @@
   font-size: 20px;
   font-weight: bold;
   background-color: #63a12b;
+  z-index: 1;
 }
 
 .linksDeInicio {
@@ -35,6 +36,7 @@
   text-decoration: none;
   padding: 10px;
   transition: 0.5s;
+  margin-top: 10px;
 }
 .elementosLink:hover {
   transform: scale(1.5);
@@ -48,13 +50,13 @@
   height: 130px;
   border-radius: 50%;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: -20px;
   border: solid 2px #f6ed67;
   margin-left: 80px;
   -webkit-box-shadow: 0px 0px 170px 37px rgba(246, 236, 103, 0.9);
   -moz-box-shadow: 0px 0px 170px 37px rgba(246, 236, 103, 0.9);
   box-shadow: 0px 0px 170px 37px rgba(246, 236, 103, 0.9);
-  z-index: 999;
+  z-index: 1;
 }
 @media only screen and (max-width: 600px) {
   .Cabecera {
