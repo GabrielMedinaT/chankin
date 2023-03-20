@@ -41,7 +41,7 @@
   color: #64527b;
 }
 .logo {
-  /* background-image: url(./images/logo.jpg); */
+  background-image: url("../images/logo.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 130px;

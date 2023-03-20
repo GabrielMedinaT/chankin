@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -19,7 +20,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <div className="elementosLink">Contacto</div>
+            <Link to="/FormularioContacto">
+              <div className="elementosLink">Contacto</div>
+            </Link>
           </li>
           <li>
             <a href="/">
