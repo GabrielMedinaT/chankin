@@ -12,18 +12,109 @@ $straw: rgba(199, 213, 132, 1);
 $maize: rgba(246, 237, 103, 1); */
 
 .componente {
-  background-color: rgba(246, 237, 103, 1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .formulario {
-  background-color: rgba(123, 168, 69, 1);
-  padding: 40px;
-  border: 5px solid black;
-  border-radius: 20%;
-  text-align: center;
-  width: 30%;
+  width: 50%;
+  height: 70%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(123, 168, 69);
+  background: radial-gradient(
+    circle,
+    rgba(123, 168, 69, 1) 0%,
+    rgba(123, 168, 69, 1) 14%,
+    rgba(123, 168, 69, 1) 25%,
+    rgba(123, 168, 69, 1) 39%,
+    rgba(123, 168, 69, 1) 51%,
+    rgba(123, 168, 69, 0.15) 71%,
+    rgba(123, 168, 69, 0) 83%,
+    rgba(123, 168, 69, 0) 100%
+  );
+}
+input[type="text"] {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+input[type="email"] {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+textarea {
+  width: 50%;
+  height: 90px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: rgba(100, 82, 123, 1);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+button {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: rgba(100, 82, 123, 1);
+  border: none;
+  cursor: pointer;
+  background-color: rgba(246, 237, 103, 1);
+}
+button:hover {
+  background-color: rgba(246, 237, 103, 1);
+  color: rgba(100, 82, 123, 1);
+  font-weight: 900;
+}
+input:hover {
+  background-color: rgba(246, 237, 103, 1);
+  color: rgba(100, 82, 123, 1);
+  font-weight: 900;
+}
+textarea:hover {
+  background-color: rgba(246, 237, 103, 1);
+  color: rgba(100, 82, 123, 1);
+  font-weight: 900;
+}
+select {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: rgba(100, 82, 123, 1);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+  background-color: rgba(246, 237, 103, 1);
 }

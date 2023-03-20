@@ -4,7 +4,7 @@ import "./FormularioContacto.css";
 const FormularioContacto = () => {
   return (
     <div className="componente">
-      <h2>¿Tiene alguna duda? Mándenos un mensaje:</h2>
+      <h2>¿Tiene alguna duda? Estámos a sus órdenes:</h2>
       <br />
       <form className="formulario">
         <label htmlFor="motivo" className="form-label">
