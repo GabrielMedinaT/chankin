@@ -1,12 +1,27 @@
 import React from "react";
 import "./FormularioContacto.css";
+import emailjs from "emailjs-com";
 
 const FormularioContacto = () => {
+  function enviarEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_zdno5qt",
+        "template_q75lp48",
+        e.target,
+        "user_y-et0LXZbs95kUCDP"
+      )
+      .then((res) => {
+        console.log(res);
+      });
+  }
   return (
     <div className="componente">
       <h1>¿Tiene alguna duda? Estámos a sus órdenes:</h1>
       <br />
-      <form className="formulario">
+      <form onSubmit={enviarEmail} className="formulario">
         <label htmlFor="motivo" className="form-label">
           Motivo de su mensaje
         </label>
@@ -42,7 +57,11 @@ const FormularioContacto = () => {
           rows="4"
         />
         <br></br>
-        <button type="submit" className="btn btn-outline-dark">
+        <button
+          // onClick={enviarEmail}
+          type="submit"
+          className="btn btn-outline-dark"
+        >
           Enviar
         </button>
       </form>

@@ -25,6 +25,8 @@ $maize: rgba(246, 237, 103, 1); */
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 .formulario {
