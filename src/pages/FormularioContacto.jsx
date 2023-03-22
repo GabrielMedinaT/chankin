@@ -54,7 +54,7 @@ const FormularioContacto = () => {
           className="form-control form-control-sm"
         />
         <br></br>
-        <label htmlFor="asunto" className="form-label">
+        <label htmlFor="asunto" className="form-label" name="asunto">
           Asunto:
         </label>
         <input
