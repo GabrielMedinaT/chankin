@@ -30,8 +30,9 @@ $maize: rgba(246, 237, 103, 1); */
 }
 
 .formulario {
+  margin-top: 50px;
   width: 50%;
-  height: 70%;
+  height: 700px;
   border-radius: 20%;
   display: flex;
   justify-content: center;
@@ -65,8 +66,8 @@ input[type="email"] {
   padding-left: 10px;
 }
 textarea {
-  width: 50%;
-  height: 90px;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -105,6 +106,7 @@ textarea:hover {
   color: rgba(100, 82, 123, 1);
   font-weight: 900;
 }
+
 select {
   width: 50%;
   height: 50px;
@@ -123,6 +125,7 @@ select:focus {
   background-color: rgba(246, 237, 103, 1);
 }
 .componente h1 {
+  margin-top: 250px;
   color: rgba(100, 82, 123, 1);
   font-size: 50px;
   font-weight: 900;
