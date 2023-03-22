@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FormularioContacto from "./pages/FormularioContacto";
 import Navbar from "./Componets/Navbar";
+import Acerca from "./pages/Acerca";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             path="/FormularioContacto"
             element={<FormularioContacto />}
           ></Route>
+          <Route path="/Acerca" element={<Acerca />}></Route>
         </Routes>
       </Router>
     </div>

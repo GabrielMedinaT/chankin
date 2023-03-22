@@ -16,7 +16,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/">
-              <div className="elementosLink">Acerca</div>
+              <Link to="/Acerca">
+                <div className="elementosLink">Acerca</div>{" "}
+              </Link>
             </a>
           </li>
           <li>
