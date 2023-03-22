@@ -3,16 +3,16 @@ import "./FormularioContacto.css";
 import emailjs from "emailjs-com";
 
 const FormularioContacto = () => {
+  const [template, setTemplate] = React.useState("");
+  const cambioTemplate = (e) => {
+    setTemplate(e.target.value);
+  };
+
   function enviarEmail(e) {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_zdno5qt",
-        "template_q75lp48",
-        e.target,
-        "3aM_N5iXX48JCZkh9"
-      )
+      .sendForm("service_zdno5qt", template, e.target, "3aM_N5iXX48JCZkh9")
       .then(
         (result) => {
           console.log(result.text);
@@ -36,12 +36,17 @@ const FormularioContacto = () => {
           class="form-select"
           aria-label="Default select example"
           name="opcion"
+          onChange={cambioTemplate}
         >
-          <option value="Informacion sobre actividades">
+          <option value="Informacion sobre actividades" name="asunto">
             Información sobre actividades
           </option>
-          <option value="Consulta con profesor">Consulta con profesor</option>
-          <option value="Hacer una sugerencia">Hacer sugerencia</option>
+          <option value="Consulta con profesor" name="asunto">
+            Consulta con profesor
+          </option>
+          <option value="Hacer una sugerencia" name="asunto ">
+            Hacer sugerencia
+          </option>
         </select>
         <label htmlFor="nombre" className="form-label" name="nombre">
           Nombre:
@@ -71,11 +76,7 @@ const FormularioContacto = () => {
           rows="4"
         />
         <br></br>
-        <button
-          // onClick={enviarEmail}
-          type="submit"
-          className="btn btn-outline-dark"
-        >
+        <button type="submit" className="btn btn-outline-dark">
           Enviar
         </button>
       </form>
