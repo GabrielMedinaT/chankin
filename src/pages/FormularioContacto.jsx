@@ -39,15 +39,11 @@ const FormularioContacto = () => {
           name="opcion"
           onChange={cambioTemplate}
         >
-          <option value="template_q75lp48" name="asunto">
+          <option value="template_q75lp48">
             Información sobre actividades
           </option>
-          <option value="template_n4dk3cp" name="asunto">
-            Consulta con profesor
-          </option>
-          <option value="template_n4dk3cp" name="asunto ">
-            Hacer sugerencia
-          </option>
+          <option value="template_n4dk3cp">Consulta con profesor</option>
+          <option value="template_n4dk3cp">Hacer sugerencia</option>
         </select>
         <label htmlFor="nombre" className="form-label" name="nombre">
           Nombre:
@@ -56,6 +52,15 @@ const FormularioContacto = () => {
           type="text"
           name="nombre"
           className="form-control form-control-sm"
+        />
+        <br></br>
+        <label htmlFor="asunto" className="form-label">
+          Asunto:
+        </label>
+        <input
+          type="text"
+          className="form-control form-control-sm"
+          name="asunto"
         />
         <br></br>
         <label htmlFor="email" className="form-label">
