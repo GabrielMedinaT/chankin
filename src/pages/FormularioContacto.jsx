@@ -3,10 +3,11 @@ import "./FormularioContacto.css";
 import emailjs from "emailjs-com";
 
 const FormularioContacto = () => {
-  const [template, setTemplate] = React.useState("");
+  const [template, setTemplate] = React.useState("template_q75lp48");
   const cambioTemplate = (e) => {
     setTemplate(e.target.value);
   };
+  console.log(template);
 
   function enviarEmail(e) {
     e.preventDefault();
@@ -38,13 +39,13 @@ const FormularioContacto = () => {
           name="opcion"
           onChange={cambioTemplate}
         >
-          <option value="Informacion sobre actividades" name="asunto">
+          <option value="template_q75lp48" name="asunto">
             Información sobre actividades
           </option>
-          <option value="Consulta con profesor" name="asunto">
+          <option value="template_n4dk3cp" name="asunto">
             Consulta con profesor
           </option>
-          <option value="Hacer una sugerencia" name="asunto ">
+          <option value="template_n4dk3cp" name="asunto ">
             Hacer sugerencia
           </option>
         </select>
