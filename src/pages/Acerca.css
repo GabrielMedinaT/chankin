@@ -4,3 +4,10 @@
   background-color: blue;
   margin: 10px auto;
 }
+[data-aos="example-anim2"] {
+  background: red;
+  transition-property: background;
+}
+[data-aos="example-anim2"].aos-animate {
+  background: green;
+}
